@@ -1,0 +1,7 @@
+---
+display_name: OLED status display
+job_name: oled_status_display
+display: true
+source: oled_status_display
+description: Show unit status, configurable metrics, and warning/error messages on a 128x64 OLED display.
+published_settings: []

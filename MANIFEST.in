@@ -1,0 +1,6 @@
+include oled_status_display/additional_config.ini
+include oled_status_display/t0-12.bdf
+include oled_status_display/splash-logo.png
+include oled_status_display/post_install.sh
+include oled_status_display/pre_uninstall.sh
+recursive-include oled_status_display/ui *.yaml
