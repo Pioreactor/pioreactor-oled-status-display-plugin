@@ -3,12 +3,13 @@
 # Config (copy-paste into config.ini):
 #
 # [oled_status_display.config]
-# refresh_interval_seconds=2
-# banner_seconds=5
-# driver=auto
-# i2c_address=0x3D
-# rotation=0
-# metrics=od_filtered,growth_rate,temperature,measured_rpm
+# refresh_interval_seconds = 0.5
+# banner_seconds = 5
+# driver = auto
+# i2c_address = 0x3D
+# rotation = 0
+# metrics = od_filtered,growth_rate,temperature,measured_rpm
+
 
 from functools import lru_cache
 from importlib.resources import files
