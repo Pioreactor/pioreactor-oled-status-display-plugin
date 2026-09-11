@@ -35,7 +35,7 @@ from pioreactor.whoami import NO_EXPERIMENT
 from pioreactor.whoami import UNIVERSAL_EXPERIMENT
 
 __plugin_name__ = "oled_status_display"
-__plugin_version__ = "0.1.12"
+__plugin_version__ = "0.2.1"
 __plugin_summary__ = "Shows Pioreactor status on a 128x64 OLED display."
 __plugin_author__ = "Pioreactor Team"
 

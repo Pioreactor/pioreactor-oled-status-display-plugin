@@ -12,7 +12,7 @@ README = Path("README.md").read_text(encoding="utf-8")
 
 setup(
     name="pioreactor-oled-status-display-plugin",
-    version="0.2.0",
+    version="0.2.1",
     license_files=("LICENSE.txt",),
     description="Show Pioreactor status on a 128x64 OLED display.",
     long_description=README,

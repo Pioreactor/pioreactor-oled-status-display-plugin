@@ -36,8 +36,8 @@ The following defaults are installed into Pioreactor configuration:
 refresh_interval_seconds=2
 banner_seconds=5
 driver=auto
-i2c_address=0x3C
-rotation=2
+i2c_address=0x3D
+rotation=0
 metrics=od_filtered,growth_rate,temperature,measured_rpm
 ```
 
