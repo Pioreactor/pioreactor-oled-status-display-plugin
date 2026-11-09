@@ -35,7 +35,7 @@ from pioreactor.whoami import NO_EXPERIMENT
 from pioreactor.whoami import UNIVERSAL_EXPERIMENT
 
 __plugin_name__ = "oled_status_display"
-__plugin_version__ = "0.2.1"
+__plugin_version__ = "0.2.2"
 __plugin_summary__ = "Shows Pioreactor status on a 128x64 OLED display."
 __plugin_author__ = "Pioreactor Team"
 
@@ -686,11 +686,11 @@ class OLEDStatusDisplay(LongRunningBackgroundJobContrib):
         self.start_passive_listeners()
 
     def _initialize_display(self, *, i2c_address: int, rotation: int, driver: str):
-        from pioreactor.hardware import SCL
-        from pioreactor.hardware import SDA
+        from pioreactor.hardware import get_scl_pin
+        from pioreactor.hardware import get_sda_pin
 
         rotation = _validate_rotation(rotation)
-        i2c = busio.I2C(SCL, SDA)
+        i2c = busio.I2C(get_scl_pin(), get_sda_pin())
         return self._initialize_display_with_bus(
             i2c=i2c,
             i2c_address=i2c_address,
